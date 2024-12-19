@@ -12,23 +12,24 @@
 <script src="./assect/js/trash_dev.js"></script>
 <script src="./assect/js/trashAllData.js"></script>
 <script src="./assect/js/delete_dev.js"></script>
+<script src="./assect/js/trash_reset_data.js"></script>
 <script>
-    /**
-     * Photo preview for file input fields
-     */
-    $(document).ready(function() {
-        // Generalized function for handling photo previews
-        const handlePhotoPreview = (inputSelector, imgSelector) => {
-            $(document).on("change", inputSelector, function(e) {
-                const imgUrl = URL.createObjectURL(e.target.files[0]);
-                $(imgSelector).attr("src", imgUrl);
-            });
-        };
+/**
+ * Photo preview for file input fields
+ */
+$(document).ready(function() {
+    // Generalized function for handling photo previews
+    const handlePhotoPreview = (inputSelector, imgSelector) => {
+        $(document).on("change", inputSelector, function(e) {
+            const imgUrl = URL.createObjectURL(e.target.files[0]);
+            $(imgSelector).attr("src", imgUrl);
+        });
+    };
 
-        // Photo preview for dynamically loaded content
-        handlePhotoPreview("#devPhoto", "#prevPhoto"); // For add form
-        handlePhotoPreview("#editDevPhoto", "#newPrevPhoto"); // For edit form
-    });
+    // Photo preview for dynamically loaded content
+    handlePhotoPreview("#devPhoto", "#prevPhoto"); // For add form
+    handlePhotoPreview("#editDevPhoto", "#newPrevPhoto"); // For edit form
+});
 </script>
 </body>
 

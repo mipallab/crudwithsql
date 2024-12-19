@@ -54,8 +54,8 @@ if (file_exists(__DIR__ . "/template/header.php")) {
                         <input class="form-control" id="Location" type="text" name="location">
                     </div>
                     <!-- preview image  -->
-                    <div class="field mb-3 border">
-                        <img class="w-100" id="prevPhoto"
+                    <div class="field mb-3">
+                        <img class="w-100 border" id="prevPhoto"
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDgkPQavzX7KwcLzeAsf0fgOx_-D51F3fag&s"
                             alt="">
                     </div>
@@ -71,7 +71,7 @@ if (file_exists(__DIR__ . "/template/header.php")) {
                     </div>
                     <div class="field-btn">
                         <input id="dev_form_submit" type="submit" class="btn btn-primary" name="create_dev"
-                            value="Submit">
+                            value="Add Data">
                         <input class="btn btn-secondary" type="reset" value="Reset">
                     </div>
                 </form>

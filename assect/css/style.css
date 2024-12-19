@@ -29,6 +29,7 @@
   min-height: 220px;
   object-fit: cover;
   max-height: 220px;
+  max-width: 220px;
   border-radius: 5px;
 } 
 

@@ -49,6 +49,10 @@ if ($show_all_trash_data['status'] === "success") {
                         
                         <td class=\"text-center\">
                             
+                            <button user-id = {$item->id} class=\"btn btn-sm btn-success reset_Dev_Data\" >
+                                <i class=\"fa fa-undo\"></i>
+                            </button>
+                            
                             <button user-id = {$item->id} class=\"btn btn-sm btn-danger delete_Dev_Data\" >
                                 <i class=\"fa fa-trash\"></i>
                             </button>
